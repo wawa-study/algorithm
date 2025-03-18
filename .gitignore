@@ -1,24 +1,41 @@
-# Compiled class file
-*.class
+### 🖥️ 운영체제(OS) 관련 파일
+.DS_Store               # macOS Finder 관련 파일
+Thumbs.db               # Windows 이미지 캐시 파일
 
-# Log file
-*.log
+### 💻 IntelliJ IDEA 관련 파일
+/.idea/                 # 프로젝트 설정 폴더 (개인 설정 포함)
+/*.iml                  # IntelliJ 모듈 파일
+/workspace.xml          # 작업공간 관련 설정
+/shelf/                 # 저장된 변경사항(선택적)
+/httpRequests/          # HTTP Client 요청 파일
+/dataSources/           # 데이터 소스 설정 관련 파일
+/dataSources.local.xml  # 로컬 데이터 소스 설정 파일
 
-# BlueJ files
-*.ctxt
+### ☕ Java & 빌드 관련 파일
+/.mvn/                  # Maven 관련 폴더
+/.gradle/               # Gradle 캐시 폴더
+/target/                # Maven 빌드 폴더
+/build/                 # Gradle 빌드 폴더
+/.classpath             # Eclipse 프로젝트 파일
+/.project               # Eclipse 프로젝트 파일
+/.settings/             # Eclipse 설정 폴더
+*.jar                   # JAR 파일 제외
+*.war                   # WAR 파일 제외
+*.ear                   # EAR 파일 제외
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+### 📝 로그 및 환경설정 파일
+/logs/                  # 로그 폴더
+*.log                   # 개별 로그 파일
+.env                    # 환경변수 파일 (보안상 Git에 올리면 안 됨)
+*.properties            # 설정 파일 (필요에 따라 제외할 수도 있음)
+*.yml                   # YAML 설정 파일 (예: application.yml)
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+### 🛠️ IDE & 툴 관련 파일
+/.vscode/               # VS Code 설정 파일
+*.swp                   # Vim 임시 파일
+/.eslintcache           # ESLint 캐시 파일
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+### ⚙️ 기타
+/out/                   # 컴파일된 클래스 파일
+/tmp/                   # 임시 파일 폴더
+!/.mvn/wrapper/maven-wrapper.jar  # Maven Wrapper 파일 유지
